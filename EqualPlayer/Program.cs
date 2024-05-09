@@ -11,7 +11,7 @@ namespace EqualPlayer
             HashSet<Player> setOfPlayers = new HashSet<Player>();
             setOfPlayers.Add(new Player(PlayerClass.Tank, "Ana"));
             setOfPlayers.Add(new Player(PlayerClass.Slayer, "Paulo"));
-            setOfPlayers.Add(new Player(PlayerClass.Tank, "Ana")); // Tentativa de adicionar Ana novamente
+            setOfPlayers.Add(new Player(PlayerClass.Tank, "Ana")); 
 
 
             foreach (Player p in setOfPlayers)
