@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace EqualPlayer
 {
@@ -6,7 +7,18 @@ namespace EqualPlayer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+    
+            HashSet<Player> setOfPlayers = new HashSet<Player>();
+            setOfPlayers.Add(new Player(PlayerClass.Tank, "Ana"));
+            setOfPlayers.Add(new Player(PlayerClass.Slayer, "Paulo"));
+            setOfPlayers.Add(new Player(PlayerClass.Tank, "Ana")); // Tentativa de adicionar Ana novamente
+
+
+            foreach (Player p in setOfPlayers)
+            {
+                Console.WriteLine($"{p.Name} é um(a) {p.PC}");
+            }
+    
         }
     }
 }
