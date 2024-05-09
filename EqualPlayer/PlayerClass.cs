@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace EqualPlayer
 {
-    public class PlayerClass
-    {
-        
+    public enum PlayerClass
+    {  
+        Tank, Fighter, Slayer,
+        Mage, Controller, Marksmen
     }
 }
