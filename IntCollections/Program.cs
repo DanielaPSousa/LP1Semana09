@@ -20,8 +20,33 @@ namespace IntCollections
                 queue.Enqueue(value); 
                 hashSet.Add(value); 
             }
+            Console.WriteLine("List: ");
+            foreach (int value in list)
+            {
+                Console.WriteLine(value + ", ");
+            }
 
+            Console.WriteLine("Stack: ");
+
+            while (stack.Count > 0)
+            {
+                int value = stack.Pop();
+                Console.WriteLine(value + ", ");
+            }
             
+            Console.WriteLine("Queue: ");
+        
+            while (queue.Count > 0)
+            {
+                int value = queue.Dequeue();
+                Console.WriteLine(value + ", ");
+            }
+
+            Console.WriteLine("HashSet: ");
+            foreach (int value in hashSet)
+            {
+                Console.WriteLine(value + ", ");
+            }
         }
     }
 }
